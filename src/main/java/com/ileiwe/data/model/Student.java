@@ -11,6 +11,7 @@ import java.util.List;
 @Data
 public class Student {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,13 +19,17 @@ public class Student {
     private String lastName;
     private LocalDate date;
 
+
     @Enumerated(EnumType.STRING)
     private Gender gender;
+
 
     @OneToOne
     private LearningParty LearningParty;
 
 
+
     @ManyToMany
-    private List<Course> courses;
+    private List<Course> enrolledCourses;
+
 }
