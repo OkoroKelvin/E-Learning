@@ -17,9 +17,8 @@ public class RegistrationController {
     @Autowired
     InstructorServiceImpl instructorServiceImpl;
 
-    @PostMapping("/instructor")
-    public ResponseEntity<?> registerAsInstructor(@RequestBody InstructorPartyDto){
-
-    }
-
+//    @PostMapping("/instructor")
+//    public ResponseEntity<?> registerAsInstructor(@RequestBody InstructorPartyDto) {
+//
+//    }
 }
